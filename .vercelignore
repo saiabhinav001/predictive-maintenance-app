@@ -1,0 +1,6 @@
+# Ignore files not needed in the serverless function bundle
+predictive_maintenance.csv
+train.py
+index.html
+.gitignore
+README.md
