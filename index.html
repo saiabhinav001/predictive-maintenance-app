@@ -393,7 +393,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="number" id="torque" name="torque" min="3.8" max="76.6" step="0.1" value="40.0" 
+                                <input type="number" id="torque" name="Torque [Nm]" min="3.8" max="76.6" step="0.1" value="40.0" 
                                        class="input-advanced w-full mt-4 text-center" required>
                             </div>
 
@@ -412,7 +412,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <input type="number" id="rot-speed" name="rot-speed" min="1168" max="2886" step="1" value="1600" 
+                                <input type="number" id="rot-speed" name="Rotational speed [rpm]" min="1168" max="2886" step="1" value="1600" 
                                        class="input-advanced w-full mt-4 text-center" required>
                             </div>
                         </div>
@@ -421,17 +421,17 @@
                         <div class="grid md:grid-cols-3 gap-4">
                             <div>
                                 <label for="air-temp" class="block text-sm font-medium text-gray-300 mb-2">Air Temperature [K]</label>
-                                <input type="number" id="air-temp" name="air-temp" step="0.1" value="300.5" 
+                                <input type="number" id="air-temp" name="Air temperature [K]" step="0.1" value="300.5" 
                                        class="input-advanced w-full" required>
                             </div>
                             <div>
                                 <label for="process-temp" class="block text-sm font-medium text-gray-300 mb-2">Process Temperature [K]</label>
-                                <input type="number" id="process-temp" name="process-temp" step="0.1" value="309.8" 
+                                <input type="number" id="process-temp" name="Process temperature [K]" step="0.1" value="309.8" 
                                        class="input-advanced w-full" required>
                             </div>
                             <div>
                                 <label for="tool-wear" class="block text-sm font-medium text-gray-300 mb-2">Tool Wear [min]</label>
-                                <input type="number" id="tool-wear" name="tool-wear" step="1" value="120" 
+                                <input type="number" id="tool-wear" name="Tool wear [min]" step="1" value="120" 
                                        class="input-advanced w-full" required>
                             </div>
                         </div>
@@ -439,7 +439,7 @@
                         <!-- Machine Type -->
                         <div>
                             <label for="type" class="block text-sm font-medium text-gray-300 mb-2">Machine Quality Type</label>
-                            <select id="type" name="type" class="input-advanced w-full" required>
+                            <select id="type" name="Type" class="input-advanced w-full" required>
                                 <option value="L">L - Low Quality</option>
                                 <option value="M" selected>M - Medium Quality</option>
                                 <option value="H">H - High Quality</option>
@@ -558,7 +558,7 @@
                         <div class="accordion-content">
                             <div class="p-6">
                                 <p class="text-gray-300 leading-relaxed">
-                                    MachineInsight Pro is an enterprise-grade predictive maintenance platform that leverages an advanced, automatically generated machine learning model to analyze real-time sensor data. Our AI, selected and optimized by IBM's AutoAI, can predict potential failures with exceptional accuracy, enabling proactive maintenance strategies that reduce downtime and operational costs.
+                                    MachineInsight Pro is a self-contained, enterprise-grade predictive maintenance platform. It uses a sophisticated machine learning model to analyze real-time sensor data and predict equipment failures. The core model was identified using automated machine learning (AutoML) techniques to ensure high performance and then deployed as part of this self-hosted application, enabling proactive maintenance strategies that reduce downtime and operational costs.
                                 </p>
                             </div>
                         </div>
@@ -578,23 +578,21 @@
                             <div class="p-6">
                                 <div class="grid md:grid-cols-2 gap-6">
                                     <div>
-                                        <h4 class="text-lg font-semibold text-cyan-400 mb-3">Frontend Technologies</h4>
+                                        <h4 class="text-lg font-semibold text-cyan-400 mb-3">Frontend & UI</h4>
                                         <ul class="space-y-2 text-gray-300 list-disc list-inside">
-                                            <li>Modern HTML5 with semantic markup</li>
-                                            <li>Tailwind CSS for responsive design</li>
-                                            <li>GSAP for advanced animations</li>
+                                            <li>Modern HTML5 & Tailwind CSS</li>
+                                            <li>GSAP for fluid animations</li>
                                             <li>Chart.js for data visualization</li>
-                                            <li>Glass morphism UI design system</li>
+                                            <li>Responsive glass morphism design</li>
                                         </ul>
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-semibold text-emerald-400 mb-3">Backend & AI</h4>
+                                        <h4 class="text-lg font-semibold text-emerald-400 mb-3">Backend & AI Model</h4>
                                         <ul class="space-y-2 text-gray-300 list-disc list-inside">
-                                            <li><strong>IBM Watson AutoAI</strong> for automated model generation</li>
-                                            <li><strong>LightGBM (LGBM) Classifier</strong> (Top-performing model)</li>
-                                            <li>Automated Hyperparameter Optimization (HPO)</li>
-                                            <li>Automated Feature Engineering</li>
-                                            <li>Vercel Serverless Functions (Backend Proxy)</li>
+                                            <li><strong>Python & Flask</strong> for the API backend</li>
+                                            <li><strong>LightGBM Classifier</strong> as the core predictive model</li>
+                                            <li>Scikit-learn for data preprocessing</li>
+                                            <li><strong>Vercel Serverless Functions</strong> for scalable deployment</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -618,18 +616,17 @@
                                     <div class="status-success glass-inset p-4 rounded-lg">
                                         <h4 class="text-lg font-semibold text-emerald-400 mb-3">Strengths</h4>
                                         <ul class="space-y-2 text-gray-300 list-disc list-inside">
-                                            <li><strong>99.4% F1-weighted score</strong> (industry-standard metric)</li>
-                                            <li><strong>Rapid Model Development:</strong> AutoAI generated and ranked 9 model pipelines in under 12 minutes.</li>
-                                            <li><strong>Automated Optimization:</strong> The best pipeline includes automated feature engineering and hyperparameter tuning.</li>
-                                            <li>Excellent performance on common failure modes.</li>
+                                            <li><strong>High Accuracy:</strong> The LightGBM model is known for its high performance, achieving an F1-score of over 99% in original tests, ensuring excellent precision and recall.</li>
+                                            <li><strong>Optimized Performance:</strong> Leverages a gradient boosting framework that is fast and efficient, making it suitable for real-time prediction scenarios.</li>
+                                            <li><strong>Comprehensive Detection:</strong> Highly effective at identifying the most common and critical failure types, including Power Failure and Tool Wear.</li>
                                         </ul>
                                     </div>
                                     <div class="status-warning glass-inset p-4 rounded-lg">
                                         <h4 class="text-lg font-semibold text-amber-400 mb-3">Limitations</h4>
                                         <ul class="space-y-2 text-gray-300 list-disc list-inside">
-                                            <li>Model performance is dependent on data quality.</li>
-                                            <li>Reduced accuracy on extremely rare or random failures.</li>
-                                            <li>Continuous monitoring and retraining are needed for new equipment types or changing conditions.</li>
+                                            <li><strong>Data Dependency:</strong> Accuracy is tied to the training data. Performance may vary on equipment with significantly different operating characteristics.</li>
+                                            <li><strong>Rare Event Prediction:</strong> May have lower accuracy on extremely rare or novel failure types not well-represented in the training dataset.</li>
+                                            <li><strong>Model Drift:</strong> As equipment ages or conditions change, performance can degrade. Periodic retraining with new data is recommended.</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -800,18 +797,17 @@
 
                 try {
                     const formData = new FormData(e.target);
+                    
+                    // *** IMPORTANT: The name attributes in the HTML must match the keys expected by the backend ***
+                    // The backend expects: "Type", "Air temperature [K]", "Process temperature [K]", "Rotational speed [rpm]", "Torque [Nm]", "Tool wear [min]"
                     const payload = {
-                        "input_data": [{
-                            "fields": ["Type", "Air temperature [K]", "Process temperature [K]", "Rotational speed [rpm]", "Torque [Nm]", "Tool wear [min]"],
-                            "values": [[
-                                formData.get('type'),
-                                parseFloat(formData.get('air-temp')),
-                                parseFloat(formData.get('process-temp')),
-                                parseFloat(formData.get('rot-speed')),
-                                parseFloat(formData.get('torque')),
-                                parseFloat(formData.get('tool-wear'))
-                            ]]
-                        }]
+                        "Type": formData.get('Type'),
+                        "Air temperature [K]": parseFloat(formData.get('air-temp')),
+                        "Process temperature [K]": parseFloat(formData.get('process-temp')),
+                        "Rotational speed [rpm]": parseFloat(formData.get('rot-speed')),
+                        "Torque [Nm]": parseFloat(formData.get('torque')),
+                        "Tool wear [min]": parseFloat(formData.get('tool-wear')),
+                        "Target": 0 // Add the 'Target' field required by the model scaler
                     };
 
                     const response = await fetch('/api/predict', {
