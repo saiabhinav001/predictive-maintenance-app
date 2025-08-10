@@ -66,3 +66,5 @@ def predict():
 @app.route('/api', methods=['GET'])
 def api_home():
     return "API is running."
+
+# Final check for deployment
