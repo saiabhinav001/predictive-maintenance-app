@@ -1,0 +1,9 @@
+# Ignore the dataset, it's not needed for prediction
+predictive_maintenance.csv
+
+# Ignore the training script
+train.py
+
+# Ignore Python's virtual environment folder
+venv/
+__pycache__/
